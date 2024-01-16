@@ -1,0 +1,79 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Arial", sans-serif;
+}
+
+.fc_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+
+select option:checked {
+  background-color: #4caf50;
+  color: white;
+}
+
+select::before {
+  content: "\2193";
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  padding: 0 8px;
+  background-color: #ddd;
+  color: #555;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.fc_charts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.fc_charts > div {
+  flex: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.fc_charts > div:hover {
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px) scale(1.02);
+}
